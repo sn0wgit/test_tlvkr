@@ -31,10 +31,10 @@ span::selection{color: #fe4855; background: #0000}
     color: #111723;
     text-align: center;
 }
-[lang="en"] body{--theses:url('/home/yarex/Загрузки/TLVKR%20website/resources/text_en.svg') center / 85% no-repeat;}
-[lang="ru"] body{--theses:url('/home/yarex/Загрузки/TLVKR%20website/resources/text_ru.svg') center / 85% no-repeat;}
+[lang="en"] body{--theses:url('resources/text_en.svg') center / 85% no-repeat;}
+[lang="ru"] body{--theses:url('resources/text_ru.svg') center / 85% no-repeat;}
 body {
-    background: var(--theses), #111723 url('/home/yarex/Загрузки/TLVKR%20website/resources/viking_gauss.png') center / 70% no-repeat;
+    background: var(--theses), #111723 url('resources/viking_gauss.png') center / 70% no-repeat;
     display: flex;
     flex-flow: column;
     place-content: center;
