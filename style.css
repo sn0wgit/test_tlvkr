@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,500;1,500&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Noto+Emoji:wght@700&display=swap');
+:is(h1, b, h2, h3, li, p)::selection{color: #ffe4e5;background: #fe485580}
+:is(a, br)::selection{background: #0000}
+span::selection{color: #fe4855; background: #0000}
+:is(code, code *)::selection{background: #111; color: #ddd;}
+[page="main"] body, html{overflow:hidden}
+[page="404"] body {background: #fe4855;}
+[page="404"] a {
+    font: 900 100px Montserrat;
+    font-size: clamp(100px, 30vh, 30vw);
+    color: #fff;
+    padding: 0 0.2em;
+    position: relative;
+    text-decoration: none;
+    outline: none !important;
+}
+[page="404"] a:before {
+    content: '';
+    position: absolute;
+    width: auto;
+    height: auto;
+    inset: 1.01em 0.175em 0.095em 0.175em;
+    background: white;
+    z-index: 0;
+}
+[page="404"] a:after {
+    content: 'GO TO HOME PAGE / НА ДОМАШНЮЮ СТРАНИЦУ';
+    position: absolute;
+    font-size: 0.075em;
+    inset: auto 3em 1.425em 3em;
+    color: #111723;
+    text-align: center;
+}
+[lang="en"] body{--theses:url('/home/yarex/Загрузки/TLVKR%20website/resources/text_en.svg') center / 85% no-repeat;}
+[lang="ru"] body{--theses:url('/home/yarex/Загрузки/TLVKR%20website/resources/text_ru.svg') center / 85% no-repeat;}
+body {
+    background: var(--theses), #111723 url('/home/yarex/Загрузки/TLVKR%20website/resources/viking_gauss.png') center / 70% no-repeat;
+    display: flex;
+    flex-flow: column;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    background: #101a23;
+    border-bottom: 1px solid #fe4855;
+    display: flex;
+    place-content: space-between;
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    position: absolute;
+    top: 0;
+}
+nav {
+    display: flex;
+    height: 23px;
+    margin: auto 0 auto 6px;
+    font: 500 16px Montserrat;
+    color: #fe4855;
+    overflow: auto;
+}
+:is(nav, footer) a {
+    font-size: 1.15em;
+    min-width: fit-content;
+    position: relative;
+}
+footer {
+    background: #101a23;
+    display: flex;
+    place-content: flex-end;
+    width: calc(100% - 1em);
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em;
+    border-top: 1px solid #fe4855;
+}
+:is(nav, footer) a:not(:last-child):before {
+    content: '';
+    width: 22.4px;
+    position: absolute;
+    height: 2px;
+    background: #111723;
+    inset: auto 0 2px auto;
+}
+:is(nav, footer) a:not(:last-child):after {
+    content: '//';
+    margin: 0 6px;
+    pointer-events: none;
+    color: #fe4855;
+}
+a {
+    font-family: Montserrat;
+    color: #fe4855;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover{color: #fff}
+a.tlvkr {
+    background: #fe4855;
+    color: #fff;
+    padding: 2px 6px;
+    font-style: italic;
+    font-weight: 900;
+}
+b {
+    display: inline-block;
+    font-weight: unset;
+    color: white;
+    background: #fe4855;
+    padding: 0 0.1em;
+}
+[page="main"] h1 {
+    margin: 0;
+    font: italic 900 4em/1em Montserrat;
+    color: #fe4855;
+    text-align: center;
+}
+:is([page="changelog"], [page="faq"]) h1 {
+    font: 700 2em/1em Montserrat;
+    text-align: left;
+    color: #fe4855;
+    margin: 0;
+}
+:is([page="changelog"] div:first-of-type, [page="faq"]) h1 {font: 800 2.5em/1 Montserrat;}
+h2 {
+    margin: 0;
+    font: 700 1.4em Montserrat;
+    text-align: center;
+    color: #fe4855;
+}
+[page="faq"] h2 {
+    text-align: left;
+}
+h3 {
+    margin: 0.5em 0;
+    color: #fe4855;
+    font: 700 1.25em Montserrat;
+}
+hr {
+    background: #fe4855;
+    border: 0;
+    height: 3px;
+    margin: 0.3em 0;
+}
+ol li, p {
+    font: 500 1em Montserrat;
+    text-align: left;
+    color: #fe4855;
+    margin: 0;
+}
+ol {
+    margin: 0.2em 0;
+    padding: 0 30px;
+}
+ol + a {margin-right: 5px;font-weight: 700;}
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1em;
+}
+.sponsors li {
+    background: #fe4855;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sponsors li::marker {
+    font-size: 0;
+}
+article {
+    background: #101a23;
+    border: 5px solid #fe4855;
+    padding: 7px 0px 7px 8px;
+    margin: 60px;
+    width: 972px;
+    overflow: hidden auto;
+}
+[page="faq"] *:target, [page="changelog"] div:first-of-type {
+    background: #fe48541a;
+    animation: 2s linear 5s 1 normal forwards running target;
+}
+@keyframes target{
+    from {background: #fe48541a}
+    to {background: #fff0}
+}
+@media (max-width: 980px){
+    article{
+        margin: 44px 0 40px;
+        border: 0;
+        height: 100%;
+        width: calc(100% - 10px);
+    }
+}
+code {
+    background: #fe48551a;
+    font-family: 'IBM Plex Mono';
+    padding: 0 0.25em;
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+a, h1, h2, h3, p{
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+.mpcontent {
+    width: fit-content;
+    z-index: 1;
+    max-width: 34.1em;
+}
+.sponsors {
+    display: flex;
+    flex-flow: column;
+    place-content: center;
+    place-items: center;
+}
+.waider {
+    display: block;
+    background: url('https://yt3.ggpht.com/ytc/AMLnZu-fxVjPhQuPYNd3szKHjpeiHlpI5SGPDzMLEq7Y=s60-c-k-c0x00ffffff-no-rj') center / cover;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+}
+.sn0wman {
+    display: block;
+    background: url('https://yt3.ggpht.com/iB7IVutf44EQScOv2LAR3pwv1vCR1VWvj3VYznsHFUID18mbIvKe5-Wonn6yR6RsgkWRn7RHzA=s60-c-k-c0x00ffffff-no-rj') center / cover;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+}
+.mtb {
+    display: block;
+    background: url('https://maketankibetter.tk/resources/MakeTankiBetter_logo.svg') center / cover;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+}
+.description {
+    background: #101a2380;
+    border: 0.3em solid #fe4855;
+    padding: 0.5em 0.6em;
+}
+/*ru-main*/
+@media (max-width: 555px){
+    html[lang="ru"][page="main"] nav{gap: 5px;}
+    html[lang="ru"][page="main"] nav * {
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        min-width: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[lang="ru"][page="main"] nav > :hover{color: #101a23;}
+    html[lang="ru"][page="main"] nav > [href*="/en"] {width: 32px;}
+    html[lang="ru"][page="main"] nav > :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    html[lang="ru"][page="main"] nav > [href*="/en"]:before {content:'EN' !important;}
+    html[lang="ru"][page="main"] nav > [href*="faq"]:before {content:'?';}
+    html[lang="ru"][page="main"] nav > [href*="changelog"]:before {content:'✏';}
+    html[lang="ru"][page="main"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="ru"][page="main"] nav :after{display: none;}
+}
+/*en-main*/
+@media (max-width: 500px){
+    html[lang="en"][page="main"] nav{gap: 5px;}
+    html[lang="en"][page="main"] nav * {
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        min-width: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[lang="en"][page="main"] nav > :hover{color: #101a23;}
+    html[lang="en"][page="main"] nav > [href*="/ru"] {width: 32px;}
+    html[lang="en"][page="main"] nav > :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    html[lang="en"][page="main"] nav > [href*="/ru"]:before {content:'RU' !important;}
+    html[lang="en"][page="main"] nav > [href*="faq"]:before {content:'?';}
+    html[lang="en"][page="main"] nav > [href*="changelog"]:before {content:'✏';}
+    html[lang="en"][page="main"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="en"][page="main"] nav :after{display: none;}
+}
+/*ru-faq*/
+@media (max-width: 565px){
+    html[lang="ru"][page="faq"] nav{gap: 5px;}
+    html[lang="ru"][page="faq"] nav * {
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        min-width: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[lang="ru"][page="faq"] nav > :hover{color: #101a23;}
+    html[lang="ru"][page="faq"] nav > [href*="/en"] {width: 32px;}
+    html[lang="ru"][page="faq"] nav > :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    html[lang="ru"][page="faq"] nav > [href*="/en"]:before {content:'EN' !important;}
+    html[lang="ru"][page="faq"] nav > [href*="faq"]:before {content:'?';}
+    html[lang="ru"][page="faq"] nav > [href*="changelog"]:before {content:'✏';}
+    html[lang="ru"][page="faq"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="ru"][page="faq"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
+    html[lang="ru"][page="faq"] nav :after{display: none;}
+}
+/*en-faq*/
+@media (max-width: 505px){
+    html[lang="en"][page="faq"] nav{gap: 5px;}
+    html[lang="en"][page="faq"] nav * {
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        min-width: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[lang="en"][page="faq"] nav > :hover{color: #101a23;}
+    html[lang="en"][page="faq"] nav > [href*="/en"] {width: 32px;}
+    html[lang="en"][page="faq"] nav > :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    html[lang="en"][page="faq"] nav > [href*="/en"]:before {content:'EN' !important;}
+    html[lang="en"][page="faq"] nav > [href*="changelog"]:before {content:'✏';}
+    html[lang="en"][page="faq"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="en"][page="faq"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
+    html[lang="en"][page="faq"] nav :after{display: none;}
+}
+/*changelog*/
+@media (max-width: 435px){
+    html[page="changelog"] nav{gap: 5px;}
+    html[page="changelog"] nav * {
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        min-width: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[page="changelog"] nav > :hover{color: #101a23;}
+    html[page="changelog"] nav > [href*="/ru"] {width: 32px;}
+    html[page="changelog"] nav > :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    html[page="changelog"] nav > [href*="/en"]:before {content:'EN' !important;}
+    html[page="changelog"] nav > [href*="/ru"]:before {content:'RU' !important;}
+    html[page="changelog"] nav > [href*="faq"]:before {content:'?';}
+    html[page="changelog"] nav > [href*="changelog"]:before {content:'✏';}
+    html[page="changelog"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[page="changelog"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
+    html[page="changelog"] nav :after{display: none;}
+}
+@media (max-width: 365px){
+    footer{gap: 5px;}
+    footer *{
+        display: flex;
+        background: #fe4855;
+        font-size: 0;
+        padding: 0 5px;
+        min-height: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    html[page] footer :before {
+        color: #101a23;
+        font: 600 1.1rem Montserrat, Noto Emoji;
+        background: none;
+        position: unset;
+        width: unset;
+        height: unset;
+        inset: unset;
+    }
+    footer :hover{color: #101a23;}
+    html[lang="en"] footer [href*="vk.com"]:before {content:'VK';}
+    html[lang="ru"] footer [href*="vk.com"]:before {content:'ВК';}
+    html[lang="en"] footer [href*="discord"]:before {content:'DISC';}
+    html[lang="ru"] footer [href*="discord"]:before {content:'ДС';}
+    html[lang="en"] footer [href*="github"]:before {content:'GIT'}
+    html[lang="ru"] footer [href*="github"]:before {content:'ГИТ'}
+    footer :after{display: none;}
+}
+@media (orientation: portrait) {
+    .mpcontent{font-size: 0.75em;}
+    span:is(#unique, #all, #fast) {display: none;}
+}
+::-webkit-scrollbar {width: 14px;}
+::-webkit-scrollbar-track {background: #fff0;}
+::-webkit-scrollbar-thumb {background: #fe4855 content-box;border: 4px solid #fff0;}
+nav::-webkit-scrollbar {height: 0;width: 0;}
