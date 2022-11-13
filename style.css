@@ -218,14 +218,14 @@ a, h1, h2, h3, p{
 }
 .waider {
     display: block;
-    background: url('https://yt3.ggpht.com/ytc/AMLnZu-fxVjPhQuPYNd3szKHjpeiHlpI5SGPDzMLEq7Y=s60-c-k-c0x00ffffff-no-rj') center / cover;
+    background: url('resources/waider.jpg') center / cover;
     width: 60px;
     height: 60px;
     font-size: 0;
 }
 .sn0wman {
     display: block;
-    background: url('https://yt3.ggpht.com/iB7IVutf44EQScOv2LAR3pwv1vCR1VWvj3VYznsHFUID18mbIvKe5-Wonn6yR6RsgkWRn7RHzA=s60-c-k-c0x00ffffff-no-rj') center / cover;
+    background: url('resources/sn0wman.jpg') center / cover;
     width: 60px;
     height: 60px;
     font-size: 0;
