@@ -367,7 +367,7 @@ a, h1, h2, h3, p{
         justify-content: center;
     }
     html[page="changelog"] nav > :hover{color: #101a23;}
-    html[page="changelog"] nav > [href*="/ru"] {width: 32px;}
+    html[page="changelog"] nav > :is([href*="/en"], [href*="/ru"]) {width: 32px;}
     html[page="changelog"] nav > :before {
         color: #101a23;
         font: 600 1.1rem Montserrat, Noto Emoji;
