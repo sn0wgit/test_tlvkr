@@ -390,7 +390,7 @@ a, h1, h2, h3, p{
     footer *{
         display: flex;
         background: #fe4855;
-        font-size: 0;
+        font-size: 0 !important;
         padding: 0 5px;
         min-height: 23px;
         align-items: center;
