@@ -339,7 +339,8 @@ a, h1, h2, h3, p{
         justify-content: center;
     }
     html[lang="en"][page="faq"] nav > :hover{color: #101a23;}
-    html[lang="en"][page="faq"] nav > [href*="/en"] {width: 32px;}
+    html[lang="en"][page="faq"] nav > [href*="/ru"] {width: 32px;}
+    html[lang="en"][page="faq"] nav > [href*="/ru"]:before {content:'RU' !important;}
     html[lang="en"][page="faq"] nav > :before {
         color: #101a23;
         font: 600 1.1rem Montserrat, Noto Emoji;
