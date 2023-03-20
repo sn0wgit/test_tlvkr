@@ -83,19 +83,13 @@ footer {
     padding: 0.5em;
     border-top: 1px solid #fe4855;
 }
-:is(nav, footer) a:not(:last-child):before {
-    content: '';
-    width: 22.4px;
-    position: absolute;
-    height: 2px;
-    background: #111723;
-    inset: auto 0 2px auto;
-}
+:is(nav, footer) a:not(:last-child) {margin-right: 24px;}
 :is(nav, footer) a:not(:last-child):after {
     content: '//';
     margin: 0 6px;
     pointer-events: none;
     color: #fe4855;
+    position: absolute;
 }
 a {
     font-family: Montserrat;
@@ -252,7 +246,7 @@ a, h1, h2, h3, p{
 }
 /*ru-main*/
 @media (max-width: 555px){
-    html[lang="ru"][page="main"] nav{gap: 5px;}
+    html[lang="ru"][page="main"] nav{gap: 5px;margin:0;}
     html[lang="ru"][page="main"] nav * {
         display: flex;
         background: #fe4855;
@@ -280,7 +274,7 @@ a, h1, h2, h3, p{
 }
 /*en-main*/
 @media (max-width: 500px){
-    html[lang="en"][page="main"] nav{gap: 5px;}
+    html[lang="en"][page="main"] nav{gap: 5px;margin:0;}
     html[lang="en"][page="main"] nav * {
         display: flex;
         background: #fe4855;
@@ -404,6 +398,7 @@ a, h1, h2, h3, p{
         min-height: 23px;
         align-items: center;
         justify-content: center;
+        margin:0;
     }
     html[page] footer :before {
         color: #101a23;
