@@ -83,8 +83,8 @@ footer {
     padding: 0.5em;
     border-top: 1px solid #fe4855;
 }
-:is(nav, footer) a:not(:last-child) {margin-right: 24px;}
-:is(nav, footer) a:not(:last-child):after {
+:is(nav, footer) a:not(:last-of-type) {margin-right: 24px;}
+:is(nav, footer) a:not(:last-of-type):after {
     content: '//';
     margin: 0 6px;
     pointer-events: none;
@@ -275,7 +275,7 @@ a, h1, h2, h3, p{
 /*en-main*/
 @media (max-width: 500px){
     html[lang="en"][page="main"] nav{gap: 5px;margin:0;}
-    html[lang="en"][page="main"] nav * {
+    html[lang="en"][page="main"] nav a {
         display: flex;
         background: #fe4855;
         font-size: 0;
@@ -332,7 +332,7 @@ a, h1, h2, h3, p{
 /*en-faq*/
 @media (max-width: 505px){
     html[lang="en"][page="faq"] nav{gap: 5px;}
-    html[lang="en"][page="faq"] nav * {
+    html[lang="en"][page="faq"] nav a {
         display: flex;
         background: #fe4855;
         font-size: 0;
