@@ -269,7 +269,7 @@ a, h1, h2, h3, p{
     html[lang="ru"][page="main"] nav > [href*="/en"]:before {content:'EN' !important;}
     html[lang="ru"][page="main"] nav > [href*="faq"]:before {content:'?';}
     html[lang="ru"][page="main"] nav > [href*="changelog"]:before {content:'✏';}
-    html[lang="ru"][page="main"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="ru"][page="main"] nav > #download:before {content:'🔻';line-height: 0;font-size: 14px;}
     html[lang="ru"][page="main"] nav :after{display: none;}
 }
 /*en-main*/
@@ -297,7 +297,7 @@ a, h1, h2, h3, p{
     html[lang="en"][page="main"] nav > [href*="/ru"]:before {content:'RU' !important;}
     html[lang="en"][page="main"] nav > [href*="faq"]:before {content:'?';}
     html[lang="en"][page="main"] nav > [href*="changelog"]:before {content:'✏';}
-    html[lang="en"][page="main"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="en"][page="main"] nav > #download:before {content:'🔻';line-height: 0;font-size: 14px;}
     html[lang="en"][page="main"] nav :after{display: none;}
 }
 /*ru-faq*/
@@ -325,7 +325,7 @@ a, h1, h2, h3, p{
     html[lang="ru"][page="faq"] nav > [href*="/en"]:before {content:'EN' !important;}
     html[lang="ru"][page="faq"] nav > [href*="faq"]:before {content:'?';}
     html[lang="ru"][page="faq"] nav > [href*="changelog"]:before {content:'✏';}
-    html[lang="ru"][page="faq"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="ru"][page="faq"] nav > #download:before {content:'🔻';line-height: 0;font-size: 14px;}
     html[lang="ru"][page="faq"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
     html[lang="ru"][page="faq"] nav :after{display: none;}
 }
@@ -354,7 +354,7 @@ a, h1, h2, h3, p{
     }
     html[lang="en"][page="faq"] nav > [href*="/en"]:before {content:'EN' !important;}
     html[lang="en"][page="faq"] nav > [href*="changelog"]:before {content:'✏';}
-    html[lang="en"][page="faq"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[lang="en"][page="faq"] nav > #download:before {content:'🔻';line-height: 0;font-size: 14px;}
     html[lang="en"][page="faq"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
     html[lang="en"][page="faq"] nav :after{display: none;}
 }
@@ -384,7 +384,7 @@ a, h1, h2, h3, p{
     html[page="changelog"] nav > [href*="/ru"]:before {content:'RU' !important;}
     html[page="changelog"] nav > [href*="faq"]:before {content:'?';}
     html[page="changelog"] nav > [href*="changelog"]:before {content:'✏';}
-    html[page="changelog"] nav > [href*="download"]:before {content:'🔻';line-height: 0;font-size: 14px;}
+    html[page="changelog"] nav > #download:before {content:'🔻';line-height: 0;font-size: 14px;}
     html[page="changelog"] nav > [href="../"]:before {content:'◀';font: 600 0.75rem Montserrat;}
     html[page="changelog"] nav :after{display: none;}
 }
