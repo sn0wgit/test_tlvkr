@@ -145,6 +145,11 @@ hr {
     height: 3px;
     margin: 0.3em 0;
 }
+video {
+    max-width: 100%;
+    border: 3px solid #fe4855;
+    background: darkcyan;
+}
 article :is(ol, ul) li, p {
     font: 500 1em Montserrat;
     text-align: left;
